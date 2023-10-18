@@ -1,34 +1,27 @@
 #include "main.h"
 /**
-*times_table - prints the 9 times table
-*
-*Return: returns nothing
-*/
+ * times_table - check lowercase.
+ */
 void times_table(void)
 {
-	int i, j, r;
+	int i = 0, j = 0;
 
-	for (i = 0; i <= 9; i++)
+	while (i < 10)
 	{
-		for (j = 0; j <= 9; j++)
+		while (j < 10)
 		{
-			r = i * j;
-				if (j > 0)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
-				if (r < 10)
-				{
-					_putchar('0' + r);
-				}
-				else
-				{
-					_putchar('0' + r / 10);
-					_putchar('0' + r % 10);
-				}
-				if (j == 9)
-					continue;
+			if (i * j <= 9)
+			{
+				_putchar((i * j) % 10 + '0');
+			}
+			else
+			{
+				_putchar((i * j) / 10 + '0');
+				_putchar((i * j) % 10 + '0');
+			}
+			if (j != 9)
+			{
+				_putchar(',');
 				if (i * (j + 1) <= 9)
 				{
 					_putchar(' ');
@@ -38,8 +31,11 @@ void times_table(void)
 				{
 					_putchar(' ');
 				}
+			}
+			j++;
 		}
-
+		j = 0;
+		i++;
 		_putchar('\n');
 	}
 }
