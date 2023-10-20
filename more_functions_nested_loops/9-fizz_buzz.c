@@ -3,10 +3,8 @@
 /**
  * main - Entry point
  *
- *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	int i;
@@ -19,21 +17,19 @@ int main(void)
 		}
 		else if (i % 3 == 0)
 		{
-			printf(" ");
 			printf("Fizz");
 		}
 		else if (i % 5 == 0)
 		{
-			printf(" ");
 			printf("Buz");
 		}
 		else
 		{
-			if (i != 1)
-			{
-				printf(" ");
-			}
 			printf("%d ", i);
+		}
+		if (i != 100)
+		{
+			printf(" ");
 		}
 	}
 	printf("\n");
