@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_dagonal - checks
+ * print_diagonal - checks
  * @n: times
  * Return: Always 0
  */
