@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <string.h>
 /**
  * *string_toupper - Entry point
  *
@@ -13,8 +13,6 @@ char *string_toupper(char *upper)
 
 	for (i = 0; upper[i] != '\0'; i++)
 	{
-		int n = upper[i];
-
 		if (upper[i] >= 'a' && upper[i] <= 'z')
 		{
 			upper[i] -= 32;
