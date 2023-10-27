@@ -19,16 +19,15 @@ char *cap_string(char *upper)
 		if (upper[i + 1] >= 97 && upper[i + 1] <= 122)
 		{
 			if (upper[i] == 32 || upper[i] == 10 || upper[i] == 9)
-					upper[i + 1] -= 32;
+				upper[i + 1] -= 32;
 			else if (upper[i] == 44 || upper[i] ==  59 || upper[i] == 46)
-                                upper[i + 1] -= 32;
+				upper[i + 1] -= 32;
 			else if (upper[i] == 33 || upper[i] == 63 || upper[i] == 34)
 				upper[i + 1] -= 32;
 			else if (upper[i] == 40 || upper[i] == 41)
 				upper[i + 1] -=  32;
-			else if (upper[i] == 123 || upper[i] == 125 )
+			else if (upper[i] == 123 || upper[i] == 125)
 				upper[i + 1] -= 32;
-		
 		}
 	}
 	return (upper);
