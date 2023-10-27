@@ -14,7 +14,7 @@ char *cap_string(char *upper)
 
 	for (i = 0; upper[i] != '\0'; i++)
 	{
-		if (i == 0 && upper[i + 1] >= 97  && upper[i] <= 122)
+		if (i == 0 && upper[i] >= 97  && upper[i] <= 122)
 			upper[i] -= 32;
 		if (upper[i + 1] >= 97 && upper[i + 1] <= 122)
 		{
