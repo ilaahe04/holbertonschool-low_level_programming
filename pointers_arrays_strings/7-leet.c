@@ -5,8 +5,6 @@
  * *leet - Entry point
  *
  * @str: 'var'
- * @lower: lower letter
- * @upper: upper letter
  * Return: Always 0 (Success)
  */
 char *leet(char *str)
