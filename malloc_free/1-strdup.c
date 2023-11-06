@@ -12,7 +12,7 @@ char *_strdup(char *str)
 	char *arr;
 	int i, size = strlen(str);
 
-	if (size == 0)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
