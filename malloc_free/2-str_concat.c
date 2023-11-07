@@ -2,9 +2,9 @@
 #include <string.h>
 #include <stdlib.h>
 /**
- * _strdup - fills memory
- * @str: str
- *
+ * str_concat - concatenates two strings
+ * @s1: str
+ * @s2: str
  * Return: char
  */
 char *str_concat(char *s1, char *s2)
@@ -41,7 +41,7 @@ char *str_concat(char *s1, char *s2)
 		{
 			arr[i] = s1[i];
 		}
-		else 
+		else
 			arr[i] = s2[i - size_1];
 	}
 	arr[i] = '\0';
