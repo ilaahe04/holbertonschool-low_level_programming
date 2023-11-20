@@ -2,11 +2,8 @@
 #include <stdio.h>
 #include "dog.h"
 /**
-  * init_dog - initialize struct dog.
+  * print_dog - initialize struct dog.
   * @d: name of struct
-  * @name: name of dog in struct
-  * @age: age of dog in struct
-  * @owner: name of owner of dog in struct
   */
 void print_dog(struct dog *d)
 {
