@@ -2,10 +2,10 @@
 #include <string.h>
 #include "function_pointers.h"
 /**
- * print_name - prints a name as is
- * @array: name of the person
- * @action:f
- * size: number
+ * array_iterator - prints an integer.
+ * @array: the integer to point
+ * @action:var
+ * @size: var
  * Return: Nothing.
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
