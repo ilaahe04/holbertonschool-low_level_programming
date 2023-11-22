@@ -6,7 +6,9 @@ int main(int argc, char **argv)
 {
 	char *op = argv[2];
 	int a, b;
+
 	if (argc != 4)
+		i
 		printf("Error\n"), exit(98);
 	if ((*op != '+' && *op != '-' && *op != '*' && *op != '/' && *op != '%')
 			|| strlen(op) > 1)
@@ -16,5 +18,5 @@ int main(int argc, char **argv)
 	if ((*op == '/' || *op == '%') && b == 0)
 		printf("Error\n"), exit(100);
 	printf("%d\n", get_op_func(op)(a, b));
-	return(0);
+	return (0);
 }
