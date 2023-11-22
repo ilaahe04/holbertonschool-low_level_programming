@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include <string.h>
 #include "3-calc.h"
+/**
+ * main - function
+ * @argc: numner og argument
+ * @argv: argv
+ * Return: 0
+ */
+
 int main(int argc, char **argv)
 {
 	char *op = argv[2];
