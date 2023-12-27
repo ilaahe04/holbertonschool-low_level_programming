@@ -1,19 +1,18 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 /**
- * main - prototype
- * Return: 0
+ * _getline - delimited string input
+ * Return: NULL
  */
-int main (void)
+char *_getline(void)
 {
-	char *buff = malloc(1024);
-	size_t len = 1024;
-
-	while (1)
-	{
-		printf("#cisfun$ ");
-		getline(&buff, &len, stdin);
-		printf("%s", buff);
-	}
-	return (0);
+	char *buff = NULL;
+	size_t len = 0;
+	int read;
+	
+	read = getline(&buff, &len, stdin);
+	if (read == -1)
+		free(buff);
+	else
+		return (buff);
+	return (NULL);
 }
