@@ -4,7 +4,6 @@
  * @left: left bound of subarray
  * @right: right bound of subarray
  * @array: The array to be printed
- * @size: Number of elements in @array
  */
 void print_array(int *array, size_t left, size_t right)
 {
